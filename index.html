@@ -7,13 +7,23 @@
 </head>
 <body>
     <h1>This is a git-practice file.</h1>
-    <p>How to make a git commitment</p>
+    <h2>How to make a git commitment</h2>
     <ul>
         <li>GO to folder in command line and type "git init", this will create a local repository</li>
         <li>Type "git status" if you want to check the status of the local repository</li>
         <li>Type "git add" + file name or "git add ." this will add all files to staging area.</li>
         <li>You can check status with "git status" to see if anything has been added or changes that need to be commited.</li>
         <li>Type "git commit -m "First Commit" to make your first commit.</li>
+    </ul>
+    <h2>How to flip back to previous commits</h2>
+    <ul>
+        <li>Go to folder and use "git add -m "second commit" You must use git add everytime before you commit.</li>
+        <li>If you contintue to change the document every so often continue to commit.</li>
+        <li>type "git log --oneline" this will show all your commit messages. This will show commit messages and a hash( number in front of messge)</li>
+        <li>type "git checkout ##### index.html   (#### stand for unique hash), this will revert the code on the code editor directly to that previous commit.</li>
+        <li>You can jump between commits, the latest commit is called the Head.</li>
+        <li>To go back to the hed type "git reset HEAD index.html"  (index.html is the file name we are working on)</li>
+        <li>Aferwards type "git checkout --index.html" this will change the code editor to where the code was at the latest commit.</li>
     </ul>
     
 </body>
